@@ -12,6 +12,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
+mvnw
 
 ### IntelliJ IDEA ###
 .idea
@@ -19,6 +20,7 @@ target/
 *.iml
 *.ipr
 .mvn
+*.cmd
 
 ### NetBeans ###
 /nbproject/private/
