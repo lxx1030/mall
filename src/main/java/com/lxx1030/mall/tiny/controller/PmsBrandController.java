@@ -27,4 +27,11 @@ public class PmsBrandController {
     public CommonResult<List<PmsBrand>> getBrandList() {
         return CommonResult.success(pmsBrandService.listAllBrand());
     }
+
+    @ApiOperation("根据名称获取品牌列表")
+    @RequestMapping(value = "listByName", method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult<List<PmsBrand>> getBrandListByName(String name) {
+        return CommonResult.success(pmsBrandService.getBrandByName(name));
+    }
 }
